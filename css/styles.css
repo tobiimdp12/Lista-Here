@@ -16,11 +16,7 @@
     box-shadow: 10px 10px 0px rgba(78, 78, 78, 0.383);
 }
 
-.bt
-{
-    width:50%;
-    
-}
+
 
 /***************LOADER*****************/
 .loader-wrapper 
@@ -160,11 +156,4 @@
     border-radius: 0px;
     box-shadow: inset 0px 0px 0px 0px #F0F0F0;
     }
-@media(max-width:768px)
-{
-    .bt
-    {
-        width:100%;
-        display:block;
-    }
-}
+
