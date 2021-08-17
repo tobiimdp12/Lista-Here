@@ -1,0 +1,170 @@
+*
+{
+    padding:0;
+    margin:0;
+}
+
+#logo
+{  
+    width: 250px;
+    height: 250px;
+    display:block;
+    margin: 7px auto;
+   
+   
+    border: 8px solid #ffffffe0;
+    box-shadow: 10px 10px 0px rgba(78, 78, 78, 0.383);
+}
+
+.bt
+{
+    width:50%;
+    
+}
+
+/***************LOADER*****************/
+.loader-wrapper 
+{
+    width: 100%;
+ 
+    min-height: 100%; 
+    background-color:rgb(0, 0, 0);
+    position: absolute;
+    z-index: 10000000;
+   
+}
+
+.loader
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 100px;
+    height: 100px;
+    z-index: 1000000000;
+    animation: animate 1s linear infinite;
+}
+
+
+.loader span
+{
+    position: absolute;
+    width:  50px;
+    height: 50px;
+    background-color:#f00;
+    animation: rotate 1s linear infinite;
+    border: 2px solid white;
+}
+.loader span:nth-child(1)
+{
+    top: 0;
+    left: 0;
+    background-color:#f79f1f;
+}
+
+.loader span:nth-child(2)
+{
+    top: 0;
+    right: 0;
+    background-color:#12cbc4;
+}
+
+.loader span:nth-child(3)
+{
+    bottom: 0;
+    left: 0;
+    background-color:#ed4c67;
+}
+
+.loader span:nth-child(4)
+{
+    bottom: 0;
+    right: 0;
+    background-color:#a3cb38;
+}
+
+@keyframes animate {
+    0%
+    {
+       width: 100px;
+       height: 100px; 
+    }
+    10%
+    {
+       width: 100px;
+       height: 100px; 
+    }
+    50%
+    {
+       width: 150px;
+       height: 150px; 
+    }
+
+    90%
+    {
+       width: 100px;
+       height: 100px; 
+    }
+    100%
+    {
+       width: 100px;
+       height: 100px; 
+    }
+
+}
+
+@keyframes rotate {
+    0%
+    {
+       transform: rotate(0deg);
+    }
+    10%
+    {
+        transform: rotate(0deg);
+    }
+    50%
+    {
+        transform: rotate(90deg);
+    }
+
+    90%
+    {
+        transform: rotate(90deg);
+
+    }
+    100%
+    {
+        transform: rotate(90deg);
+
+    }
+
+}
+
+/*SCROLL BAR**/
+::-webkit-scrollbar{
+    width: 13px;
+    height: 13px;
+    }
+    ::-webkit-scrollbar-thumb{
+    background: #FFFFFF;
+    border: 3.5px dotted #000000;
+    border-radius: 0px;
+    }
+    ::-webkit-scrollbar-thumb:hover{
+    background: #B3AFB3;
+    }
+    ::-webkit-scrollbar-track{
+    background: #000000;
+    border: 3.9px dotted #FFFFFF;
+    border-radius: 0px;
+    box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+    }
+@media(max-width:768px)
+{
+    .bt
+    {
+        width:100%;
+        display:block;
+    }
+}
