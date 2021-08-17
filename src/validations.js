@@ -29,7 +29,7 @@ export function validWeight(weight)
 
 export function validHeight(height)
 {
-   if(height.length==0||height.length>3||height<0||height>3)
+   if(height.length==0||height.length>4||height<0||height>3)
    {
         return false;
    } 
